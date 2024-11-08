@@ -1,9 +1,11 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html, body {  scroll-behavior: smooth;
+html, body { 
   overflow-x: hidden;
   height: 100%;
   width: 100%;
@@ -11,7 +13,9 @@ html, body {  scroll-behavior: smooth;
  /* background-color: rgb(0, 0, 0) !important; */
  background: url('https://www.abusaid.me/hero.svg') no-repeat center;
  background-size: cover;
+ user-select: none;
 }
+
 .main1 {
     width: 100%;
     height: 100%;
@@ -26,7 +30,6 @@ html, body {  scroll-behavior: smooth;
     cursor: pointer;
 }
 #abt:hover,#skl:hover,#pjs:hover,#educ:hover,#ctt:hover{
-  
     color: #F6FA70;
 }
 
@@ -140,14 +143,15 @@ button:active{
 }
 #codediv{
     width: 45vw;
-    height: 60vh;
+    height: auto;
     background: linear-gradient(to right,rgb(13,18,36),rgb(10,13,54));
     filter: drop-shadow(1px 1px 2px rgb(236,72,153));
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-     
+    padding-top: 2vw;
+    padding-bottom: 2vw; 
 }
 
 @media (max-width:1024px){
@@ -202,6 +206,10 @@ button:active{
 }
 
 /* main2 css */
+
+
+
+
 .main2{ 
     width: 100%;
     height: 50%;
@@ -211,18 +219,19 @@ button:active{
 .left2{
     width: 70%;
     height: 100%;
-    /* background-color: red; */
+    /* background-color: red;    */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
-    padding: 9vmax;
+    padding: 4vw;
     color: white;
     line-height: 2vmax;
 }
 .left2 h1{
-    font-size: 2vmax;
-    padding-bottom: 1vmax;
+    font-size: 2vw;
+    padding-bottom: 1.5vmax;
+    padding-top: 3vw;
 }
 
 .right2{
@@ -252,15 +261,17 @@ button:active{
 /* main2 responsive */
 @media (max-width:1024px){
     .left2 p{ 
-        padding: 0px 0px;
-        line-height: 2.5vmax;
-         width: 350px;
-         height: 400px;
+    
+        line-height: 3.5vw;
+         width: auto;
+         height: auto;
+         /* background-color: rebeccapurple; */
     }  
 }
 
 @media (max-width:700px) {
-    .main2{ margin-top: -13vmax;
+    .main2{
+         margin-top: -13vmax;
         overflow: hidden;
          width: 100%;
         height: 100%;
@@ -297,113 +308,143 @@ button:active{
     }
     .left2 h1{
         font-size: 4vmax;
-        padding-bottom: 3vmax;
+        padding-bottom: 4vw;
     
     }
     .left2 p{ 
-        padding: 0px 10px;
+        padding: 0vw 6vw;
         line-height: 2.5vmax;
-         width: 350px;
-         height: 400px;
+         width: auto;
+         height: auto;
+         /* padding-bottom: 15vw; */
     }    
 }
 
 
-.main3{  border-top: 1px solid #c1abab;
-    width: 100%;
-    margin-top: 5%;
-    height: auto !important;
-    /* background-color: crimson;  */
-    color:#c6e8a2;
+.main3{ 
+    border-top: 1px solid #c1abab;
+   width: 100%;
+   margin-top: 5%;
+   height: auto !important;
+   /* background-color: crimson;  */
+   color:#c6e8a2;
 }
 
 .main3top{
-    width: 100%;
-    height: 25%;
-     /* background-color: red;  */
-    display: flex;
-    flex-direction: column;
-   justify-content: center;
-  
+   width: 100%;
+   height: 25%;
+    /* background-color: red;  */
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+ 
 }  
 .main3top h1{ padding-top: 2vmax;
-    font-size: 4vw;
-    padding-left: 2vw;
-    font-weight: 700;
+   font-size: 3vw;
+   padding-left: 4vw;
+   font-weight: 500;
+   font-family: "Pacifico", serif;
 }
 .main3top h2{
-    font-size: 1.9vw;
-    padding-left: 2.5vw;
-    font-weight: 500;
+   font-size: 1.9vw;
+   padding-left: 5vw;
+   padding-top: 0.5vw;
+   font-weight: 500;
 }   
 .main3bottom{
-    width: 100%;
-    height: 75%;
-    /* background-color: rgb(145, 145, 70); */  
-    display: flex;
-    justify-content: center;
-    padding-top: 150px;
+   width: 100%;
+   height: 75%;
+   /* background-color: rgb(145, 145, 70); */  
+   display: flex;
+   justify-content: center;
+   padding-top: 150px;
 }
 
 .grid-container { 
-      padding: 0px 50px;
-      padding: 70px 50px;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    gap: 25px;
-    height: auto;
+     padding: 0px 50px;
+     padding: 70px 90px;
+   display: grid;
+   grid-template-columns: auto auto auto auto auto auto;
+   gap: 25px;
+   height: auto;
 }
 
 .grid-item{
-    padding: 7px;
-    /* border: 1px solid #ccc; */
-    background-color: white;
-    border-radius: 10px;
-    width: 100px;
+   border:1px solid rgb(33, 37, 54);
+   background-color: #11152c;
+   border-radius: 10px;
+   width: 100px;
+   height: 100px;
+   transition: all ease 0.5s;
+   display: flex;
+
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
 }
 
 .grid-item:hover{
-   filter: drop-shadow(2px 2px 15px rgb(162, 45, 85));
+   scale: 1.15;
+  border: 1px solid rgb(139, 91, 245);
 }
 
 
 
 @media (max-width: 700px) {
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
+   .grid-container {
+       grid-template-columns: repeat(3, 1fr);
+   }
 }
 
 @media (max-width:700px) {
-    .main3{ 
-        /* width: 100%; */
-        height: 55%;
-        /* background-color: red; */
-      overflow: hidden;
+   .main3{ 
+       /* width: 100%; */
+       height: 55%;
+       /* background-color: red; */
+     overflow: hidden;
+   }
+    .main3top h1
+    {  padding-left: 15px;
+       font-size: 5vmax;
+       overflow: hidden;
     }
-     .main3top h1
-     {  padding-left: 15px;
-        font-size: 5vmax;
-        overflow: hidden;
-     }
-     .main3top h2
-     {
-        font-size: 2.5vmax;
-        padding-left: 2vmax;
-     }
-     .main3bottom{ 
-        margin-top: -20%;
-        /* height: 100%; */
-        /* background-color: red; */
-     }
-     .grid-container{
-        margin-top: 60px;
-        padding: 0px 0px;
-             
+    .main3top h2
+    {
+       font-size: 2.5vmax;
+       padding-left: 2vmax;
     }
- 
+    .main3bottom{ 
+       margin-top: -20%;
+       /* height: 100%; */
+       /* background-color: red; */
+    }
+    .grid-container{
+       margin-top: 60px;
+       padding: 0px 0px;
+            
+   }
+
 }
 
+
+
+#html{
+width: 50px;
+}
+#css{
+   width: 50px;
+}
+
+#js{
+   width: 55px;
+}
+#githubSymbol{
+ font-size: 2rem;
+}
+#C{
+   width: 75px;
+   border-radius: 15px;
+}
 
 .main4 { margin-top: 42%;
     width: 100%;
