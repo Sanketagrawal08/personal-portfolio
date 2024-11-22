@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
 
+@font-face {
+    font-family: california;
+    src: url(California.otf);
+}
+@font-face {
+    font-family: gilroy;
+    src: url(Gilroy-Regular.woff);
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -10,10 +20,10 @@ html, body {
   height: 100%;
   width: 100%;
   background-color: rgb(13, 18, 36) !important;
- /* background-color: rgb(0, 0, 0) !important; */
- background: url('https://www.abusaid.me/hero.svg') no-repeat center;
+ /* background: url('https://www.abusaid.me/hero.svg') no-repeat center; */
  background-size: cover;
  user-select: none;
+ font-family: gilroy;
 }
 
 .main1 {
@@ -35,27 +45,37 @@ html, body {
 
 
 #name-text{
+    font-family: california;
+    font-size: 2.5vw;
+    font-weight: 200;
+    letter-spacing: 0.5vw;
+    /* margin-left: 7vw; */
+
+    white-space: nowrap;
 transition: all ease 0.1s;
 }
 
 #leftnav{
-    width: 30%;
+    width: 50%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    padding-left: 5vw;
     font-size: 2.2vmax;
     color: #DEFF8B;
     font-weight: 700;
+    /* background-color: red; */
 }
 #rightnav{ 
+    /* background-color: crimson; */
     color: white;
     display: flex;
     justify-content: end;
     gap: 3vmax;
     padding-right: 3vmax;
     align-items: center;
-    width: 70%;
+    width: 50%;
     height: 100%;
 }
 .rest{
@@ -671,7 +691,7 @@ width: 50px;
     justify-content: center;
     align-items: center;
     font-size: 1.4vmax;
-    color: white;
+    color: #F6FA70;
     font-weight: 700;
 }
 #e1-dname{
@@ -713,7 +733,7 @@ width: 50px;
     justify-content: center;
     align-items: center;
     font-size: 1.4vmax;
-    color: white;
+    color: #F6FA70;
     font-weight: 700;
 }
 #e2-sname{
@@ -750,7 +770,7 @@ width: 50px;
     justify-content: center;
     align-items: center;
     font-size: 1.4vmax;
-    color: white;
+    color: #F6FA70;
     font-weight: 700;
 }
 #e3-sname{
