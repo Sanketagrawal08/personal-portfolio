@@ -448,13 +448,17 @@ button:active{
 
 
 
+
+
 #html{
 width: 50px;
 }
 #css{
    width: 50px;
 }
-
+#react{
+    width: 55px;
+}
 #js{
    width: 55px;
 }
@@ -852,10 +856,10 @@ width: 50px;
    
 }
 #mail2,#linkedin2,#instagram2,#github2{
-    font-size: 2vw;
+    font-size: 2.5vw;
     padding: 1vmax 1.5vmax;
     margin: 0 3vmax;
-    background-color: grey;
+    /* background-color: grey; */
     border-radius: 50%;
     transition: all ease .5s;
 }
@@ -864,38 +868,34 @@ width: 50px;
     color: white;
 }
 #mail2:hover{
-  
-    background-color: transparent;
+  color: crimson;
 }
 #linkedin2{ 
     color: white;
 }
 #linkedin2:hover{
-    color: white;
-    background-color: transparent;
+    color: rgb(102, 118, 241);
 }
 #instagram2{
     color: white;
 }
 #instagram2:hover{
-    color: white;
-    background-color: transparent;
+    color: rgb(246, 114, 136);
 }
 #github2{
     color: white;
 }
 
-#github2:hover{
-    color: white;
-    background-color: transparent;
-}
 #last-text h1{
-    font-size: 2vmax;
+    font-size: 2.8vmax;
     font-weight: 700;
      padding: 2vmax 0;
     color: rgb(236, 72, 153);
     transition: all ease 1s;
-    animation: h1-moving 3s 0s infinite ;
+    /* animation: h1-moving 3s 0s infinite ; */
+    font-family: california;
+    word-spacing: 5px;
+    letter-spacing: 7px;
 }
 
 @keyframes h1-moving {
