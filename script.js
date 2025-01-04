@@ -64,22 +64,22 @@ var cmbtn = document.getElementById("cmbtn");
 
 
 abt.addEventListener("click",function(){
-    main2.scrollIntoView({ behavior: 'instant' });
+    main2.scrollIntoView({ behavior: 'smooth' });
 })  
 skl.addEventListener("click",function(){
-    main3.scrollIntoView({behavior : 'instant'});
+    main3.scrollIntoView({behavior : 'smooth'});
 })
 pjs.addEventListener("click",function(){
-    project_heading.scrollIntoView({behavior : 'instant'});
+    project_heading.scrollIntoView({behavior : 'smooth'});
 })
 educ.addEventListener("click",function(){
-    main5.scrollIntoView({behavior : 'instant'});
+    main5.scrollIntoView({behavior : 'smooth'});
 })
 ctt.addEventListener("click",function(){
-    main6.scrollIntoView({behavior : 'instant'});
+    main6.scrollIntoView({behavior : 'smooth'});
 })
 cmbtn.addEventListener("click",function(){
-    main6.scrollIntoView({behavior : 'instant'});
+    main6.scrollIntoView({behavior : 'smooth'});
 })
 
 
