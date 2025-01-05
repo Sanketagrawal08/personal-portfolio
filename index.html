@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <div class="main1">
         <div class="nav">
                 <div class="flex items-center gap-2 mr-8">
@@ -39,16 +38,26 @@
             <a id="instagram"  href="#"><i class="ri-instagram-line"></i></a>
             <a id="mail"  href="#"><i class="ri-mail-line"></i></a>
            </div>
-           <div class="btndiv flex"><button id="cmbtn">CONTACT ME</button>
-            <button id="rsmbtn">GET RESUME</button> </div>
+           <div class="btndiv flex">
+            <button id="cmbtn">CONTACT ME</button>
+            <a class="resume" href="sanket.jpeg" target="_blank">
+                <button>GET RESUME</button>
+            </a>
+            </div>
         </div>
         <div class="rightrest">
-            <div id="codeAbove" style="border-top-left-radius: 10px; border-top-right-radius: 10px;" class="text-white w-[45vw] p-4 bg-[rgb(39,39,42)] flex gap-2">
-                <div  class="circle ml-2 bg-red-500 w-[1vw] h-[1vw] rounded-full"></div>
-                <div class="circle bg-yellow-500 w-[1vw] h-[1vw] rounded-full"></div>
-                <div class="circle bg-green-500 w-[1vw] h-[1vw] rounded-full"></div>
+            <div style="background: linear-gradient(to right, rgb(39, 39, 45), rgb(73, 73, 74));" class="w-[45vw] flex justify-between rounded-t-lg">
+                <div class="flex items-center text-white pl-6 font-semibold">
+                    <h1 style="color: rgb(8, 169, 118); word-spacing: 2px;">🧑‍💻 Sanket Code's Lab</h1>
+                </div>
+                <div id="codeAbove" class="text-white p-4 flex gap-2">
+                    <div  class="circle ml-2 bg-red-500 w-[1vw] h-[1vw] rounded-full"></div>
+                    <div class="circle bg-yellow-500 w-[1vw] h-[1vw] rounded-full"></div>
+                    <div class="circle bg-green-500 w-[1vw] h-[1vw] rounded-full"></div>
+                </div>
             </div>
-             <div id="codediv">
+          
+             <div id="codediv" style="border-top: 1px solid rgb(79, 79, 79);">
                  <div class="pl-16">
                     <span style="color: cornflowerblue;">const</span>
                     <span style="color: rgb(236, 72, 153);">coder = {</span>
@@ -106,7 +115,7 @@
                     <img id="html" src="https://imgs.search.brave.com/Hcit600OKnO0FeK7EFdtxTLDWtEOerX4WjyHtEmHRdQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8xMDUxLzEwNTEy/NzcucG5nP3NlbXQ9/YWlzX2h5YnJpZA" alt="HTML">
                     <h1 class="flex justify-center text-white font-semibold">HTML</h1>
                 </div>
-                <div class="grid-item"><img  id="css" src="919826-removebg-preview.png" alt="CSS"><h1 class="flex justify-center text-white font-semibold">CSS</h1></div>
+                <div class="grid-item"><img  id="css" src="css new logo.png" alt="CSS"><h1 class="flex justify-center text-white font-semibold">CSS</h1></div>
                 <div class="grid-item"><img id="js"  src="new js.png"  alt="JAVASCRIPT"><h1 class="flex justify-center text-white font-semibold">JAVASCRIPT</h1></div>
                 <div class="grid-item"><img  id="react" src="react-logo.png" alt="REACT"><h1 class="flex justify-center text-white font-semibold">REACTJS</h1></div>
                 <div class="grid-item"><i id="githubSymbol" class="ri-github-line"></i><h1 class="flex justify-center text-white font-semibold">GITHUB</h1></div>
@@ -116,8 +125,12 @@
         </div>
     </div>
 
-    <div class="main4 ">
-         <div class="project-card bg-[rgb(39,39,42)] w-[25vw] rounded-lg text-white p-4">
+    <div class="main4">
+        <div class="header-main5">
+            <h1 style="font-family: gilroy; font-weight: 200; letter-spacing: 0.4vw;">PROJECTS 📚</h1>
+        </div>
+        <div class="flex flex-wrap gap-16 pt-4">
+             <div class="project-card bg-[rgb(39,39,42)] w-[25vw] rounded-lg text-white p-4">
             <video class="w-full rounded-lg" controls muted loop src="./Video/final1.mp4"></video>
             <h1 class="text-center font-semibold text-[1.7vw] p-2 text-[rgb(6,182,212)]">Fake Store</h1>
             <p class="pt-4 pb-4"> 
@@ -149,6 +162,7 @@
             </p>
             <a style="color: rgb(60, 132, 191);" class="pt-8 pb-4 mr-4" href="https://sanketagrawal08.github.io/fakestore/">LIVE LINK</a>
             <a style="color: rgb(150, 191, 60);" class="pt-4" href="https://github.com/Sanketagrawal08/fakestore">SOURCE CODE</a>
+        </div>
         </div>
     </div>
 
@@ -183,20 +197,29 @@
                 <div id="laptop-animation"></div>
             </div>
         </div>
-        
-
-
     </div>
     
-   <div class="main6">
-        <div class="mt-[20vh]" id="last-text"> 
-          <h1>FEEL FREE TO CONTACT</h1>
+   <div class="main6 w-full h-screen flex justify-center items-center gap-4 mt-32">
+       <div class="w-1/2 flex flex-col justify-center items-center">
+          <div class="">
+              <form class="flex flex-col">
+                   <h1 class="text-center text-white">Get in touch</h1>
+                   <input type="text" placeholder="Name">
+                   <input type="email" placeholder="Email">
+                   <textarea cols="10" rows="4" name="" id="" placeholder="Message"></textarea>
+              </form>    
+          </div>
         </div>
-        <div class="icons-div">
-          <a id="linkedin2" href="#"><i class="ri-linkedin-fill"></i></a>
-          <a id="github2" href="#"><i class="ri-github-fill"></i></a>
-          <a id="instagram2" href="#"><i class="ri-instagram-fill"></i></a>
-          <a id="mail2" href="#"><i class="ri-mail-fill"></i></a>
+        <div class="w-1/2 flex flex-col h-screen items-center justify-center">
+            <div class="mt-[20vh]" id="last-text"> 
+                <h1>FEEL FREE TO CONTACT</h1>
+              </div>
+              <div class="icons-div flex" >
+                <a id="linkedin2" href="#"><i class="ri-linkedin-fill"></i></a>
+                <a id="github2" href="#"><i class="ri-github-fill"></i></a>
+                <a id="instagram2" href="#"><i class="ri-instagram-fill"></i></a>
+                <a id="mail2" href="#"><i class="ri-mail-fill"></i></a>
+              </div>
         </div>
       </div>
       
