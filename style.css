@@ -808,4 +808,9 @@ width: 50px;
         font-size: 2vmax;
         background-color: crimson;
     }
+    .main6{
+        display: flex;
+        flex-direction: column;
+    }
 }
+

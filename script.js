@@ -3,10 +3,7 @@ var linkedin = document.querySelector("#linkedin");
 var github = document.querySelector("#github");
 var instagram = document.querySelector("#instagram")
 var mail = document.querySelector("#mail");
-var linkedin2 = document.querySelector("#linkedin2");
-var github2 = document.querySelector("#github2");
-var instagram2 = document.querySelector("#instagram2")
-var mail2 = document.querySelector("#mail2")
+
 
 linkedin.addEventListener("click",function(){
     window.open("https://www.linkedin.com/in/sanket-agrawal-1a0094309/");
@@ -23,21 +20,7 @@ instagram.addEventListener("click",function(){
 mail.addEventListener("click",function(){
     window.open("mailto:sanketagrawal6969@gmail.com")
 });
-linkedin2.addEventListener("click",function(){
-    window.open("https://www.linkedin.com/in/sanket-agrawal-1a0094309/");
-});
 
-github2.addEventListener("click",function(){
-    window.open("https://github.com/Sanketagrawal08");
-});
-
-instagram2.addEventListener("click",function(){
-    window.open("https://www.instagram.com/sanket_agrawal08/");
-})
- 
-mail2.addEventListener("click",function(){
-    window.open("mailto:sanketagrawal6969@gmail.com")
-})
 
 var animation = lottie.loadAnimation({
     container: document.getElementById('laptop-animation'), // the container div
@@ -79,6 +62,22 @@ ctt.addEventListener("click",function(){
 })
 cmbtn.addEventListener("click",function(){
     main6.scrollIntoView({behavior : 'smooth'});
+})
+
+
+var nameInput = document.getElementById("nameInput")
+var emailInput = document.getElementById("emailInput")
+var messageInput = document.getElementById("messageInput")
+var submitForm = document.getElementById("submitForm")
+
+nameInput.addEventListener('input',function(){
+    console.log(nameInput.value);
+})
+emailInput.addEventListener('input',function(){
+    console.log(emailInput.value);
+})
+messageInput.addEventListener('input',function(){
+    console.log(messageInput.value);
 })
 
 
