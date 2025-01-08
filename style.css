@@ -171,30 +171,45 @@ button:active{
     .rightrest{
         width: 100%;
     }
+    #foricon{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    #foricon i{
+        font-size: 7vw;
+    }
+    #codeAbove{
+        width: 90%;
+        white-space: nowrap;
+    }
+    #codediv1{
+        width: 90%;
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+        gap: 15vw;
+    }
     #codediv{
         width: 90%;
     }
-
-
+    
+   
 }
 
 @media (max-width:800px) {
 
 
   .nav{
-    width: auto;
-    display: flex;
+    display: none;
   }
   .main1{
     /* background-color: red; */
     margin-top: -30px;
   }
-#codeAbove{
-    width: 90%;
-}
+
 .circle{
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 3vw;
+    height: 3vw;
 }
  .leftrest{
     display: flex;
@@ -206,15 +221,12 @@ button:active{
  } 
  
  .leftrest h5{
-    font-size: 7px;
+    font-size: 2.2vw;
  }
 
 }
 
 /* main2 css */
-
-
-
 
 .main2{ 
     width: 100%;
@@ -480,7 +492,7 @@ width: 50px;
 
 @media (max-width:700px) {
     .main4{
-        margin-top: 100%;
+        margin-top: 45%;
         gap: 25px;
         display: flex;
         flex-direction: column;
@@ -708,18 +720,15 @@ width: 50px;
         font-size: 4.3vmax;
     }
     
-
+    .header-main5 h1{
+        font-size: 4.3vmax;
+    }
 }
 
-
-
-
 @media (max-width:800px) {
-   .main5{
-     margin-top: 20%; 
-   }
+   
    .main5 .header-main5{
-     margin-top: -50% !important;
+     margin-top: -120% !important;
    }
 }
 @media (max-width:615px) {

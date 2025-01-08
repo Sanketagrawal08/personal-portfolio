@@ -35,7 +35,7 @@ var abt = document.getElementById('abt');
 var main2 = document.getElementsByClassName("main2")[0]; 
 var main3 = document.getElementsByClassName("main3")[0]; 
 var main4 = document.getElementsByClassName("main4")[0]; 
-var project_heading = document.getElementById("heading");
+var project_heading = document.getElementsByClassName("header-main5")[0]
 var main5 = document.getElementsByClassName("main5")[0]; 
 var main6 = document.getElementsByClassName("main6")[0]; 
 var skl = document.getElementById("skl")
@@ -65,19 +65,39 @@ cmbtn.addEventListener("click",function(){
 })
 
 
-var nameInput = document.getElementById("nameInput")
-var emailInput = document.getElementById("emailInput")
-var messageInput = document.getElementById("messageInput")
-var submitForm = document.getElementById("submitForm")
+var feedback_form = document.getElementById("feedback-form")
+var sbtn = document.getElementById("submitForm")
+console.log(sbtn.textContent);
 
-nameInput.addEventListener('input',function(){
-    console.log(nameInput.value);
-})
-emailInput.addEventListener('input',function(){
-    console.log(emailInput.value);
-})
-messageInput.addEventListener('input',function(){
-    console.log(messageInput.value);
-})
+emailjs.init("zBq95BH7z1_2CrgID");
+
+feedback_form.addEventListener("submit", (e) => {
+    
+    e.preventDefault();
+
+    console.log("Form Data AAYA - ", e.target);
+
+    sbtn.textContent = "Submitting..."
+    sbtn.disabled = true
+
+    emailjs.sendForm('service_j5rdm6p', 'template_idf6yl4', e.target, 'zBq95BH7z1_2CrgID')
+    .then((result) => {
+        
+        sbtn.textContent = "Submitted Successfully"
+
+        setTimeout(() => {
+            sbtn.textContent = "Submit"
+            sbtn.disabled = false;
+        }, 1000);
+
+    })
+    .catch((error) => {
+        
+        alert('Failed to send feedback. Please try again.');
+        console.error(error);
+        sbtn.textContent = "Submit"
+        sbtn.disabled = false;
+    });
+});
 
 
