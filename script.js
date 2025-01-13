@@ -31,6 +31,7 @@ var animation = lottie.loadAnimation({
 })
 
 
+
 var abt = document.getElementById('abt');
 var main2 = document.getElementsByClassName("main2")[0]; 
 var main3 = document.getElementsByClassName("main3")[0]; 
@@ -75,15 +76,12 @@ feedback_form.addEventListener("submit", (e) => {
     
     e.preventDefault();
 
-    console.log("Form Data AAYA - ", e.target);
-
     sbtn.textContent = "Submitting..."
     sbtn.disabled = true
-
     emailjs.sendForm('service_j5rdm6p', 'template_idf6yl4', e.target, 'zBq95BH7z1_2CrgID')
     .then((result) => {
         
-        sbtn.textContent = "Submitted Successfully"
+        sbtn.textContent = "Submitted Successfully ✅"
 
         setTimeout(() => {
             sbtn.textContent = "Submit"
@@ -99,5 +97,3 @@ feedback_form.addEventListener("submit", (e) => {
         sbtn.disabled = false;
     });
 });
-
-
