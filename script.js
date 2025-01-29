@@ -32,6 +32,8 @@ var animation = lottie.loadAnimation({
 
 
 
+
+
 var abt = document.getElementById('abt');
 var main2 = document.getElementsByClassName("main2")[0]; 
 var main3 = document.getElementsByClassName("main3")[0]; 

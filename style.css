@@ -20,8 +20,8 @@ background-color: rgb(10, 9, 9);
 }
 
 .main1 {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 .nav{
     width: 40%;
@@ -231,7 +231,7 @@ button:active{
 .main2{ 
     width: 100%;
     height: 50%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
 }
 .left2{
@@ -343,6 +343,7 @@ button:active{
    height: auto !important;
    /* background-color: crimson;  */
    color:#c6e8a2;
+
 }
 
 .main3top{
@@ -468,6 +469,7 @@ width: 50px;
     gap: 2vmax;
     white-space: wrap;
     flex-direction: column;
+    /* background-color: crimson;       */
 }
 .strong{
     color: rgb(172, 172, 172);
@@ -497,6 +499,7 @@ width: 50px;
         display: flex;
         flex-direction: column;
         gap: 35px;
+        /* background-color: red; */
     }
     .project-card{
         width: auto !important;
@@ -733,7 +736,8 @@ width: 50px;
 }
 @media (max-width:615px) {
     .main5{
-     margin-top: 90vh;
+        /* background-color: red; */
+     margin-top: 80vh;
     }
 }
 
