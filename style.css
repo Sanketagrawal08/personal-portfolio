@@ -461,20 +461,7 @@ width: 50px;
    border-radius: 15px;
 }
 
-.main4 {
-    margin-top: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 2vmax;
-    white-space: wrap;
-    flex-direction: column;
-    /* background-color: crimson;       */
-}
-.strong{
-    color: rgb(172, 172, 172);
-    font-weight: 100;
-}
+
 @media (max-width: 1024px) {
   .main4{
     margin-top: 55%;
