@@ -69,12 +69,14 @@ color: black;
     justify-content: center;
 }
 
+
+
 .leftrest h1{
 font-size: 2.9vmax;
 padding-left: 5vmax;
 font-weight: 700;
-
 }
+
 .leftrest h2{
     font-size: 2.9vmax;
     padding-left: 5vmax;
@@ -233,9 +235,18 @@ button:active{
  .leftrest h5{
     font-size: 3vw;
  }
+
+  .leftrest h1{
+    font-size: 4vw;
+    font-family: cursive;
+ }
  
  .leftrest p{
     font-size: 2.7vw;
+ }
+
+ .btndiv{
+    margin-top: 6%;
  }
 
 }
@@ -247,7 +258,7 @@ button:active{
         width: 100vw;
     }
     .leftrest p{
-    font-size: 2vw;
+    font-size: 2.7vw;
  }
 }
 
