@@ -8,10 +8,6 @@ var animation = lottie.loadAnimation({
 })
 
 
-
-
-
-var abt = document.getElementById('abt');
 var main2 = document.getElementsByClassName("main2")[0]; 
 var main3 = document.getElementsByClassName("main3")[0]; 
 var main4 = document.getElementsByClassName("main4")[0]; 
@@ -25,9 +21,7 @@ var ctt = document.getElementById("ctt")
 var cmbtn = document.getElementById("cmbtn");
 
 
-abt.addEventListener("click",function(){
-    main2.scrollIntoView({ behavior: 'smooth' });
-})  
+
 skl.addEventListener("click",function(){
     main3.scrollIntoView({behavior : 'smooth'});
 })

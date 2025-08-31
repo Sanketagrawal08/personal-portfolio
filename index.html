@@ -27,7 +27,6 @@
           <h1 id="name-text">Sanket Agrawal</h1>
         </div>
         <div class="flex gap-6">
-          <h1 id="abt">About</h1>
           <h1 id="skl">Skills</h1>
           <h1 id="pjs">Projects</h1>
           <h1 id="educ">Education</h1>
@@ -40,7 +39,8 @@
           <h1>
             I am <span style="color: rgb(6, 182, 212)">SANKET AGRAWAL</span>
           </h1>
-          <p class="mt-4">
+          <div id="abhikara">
+            <p class="mt-4">
             I’m a 3rd-year B.Tech student at LNCT Bhopal
             <br />
             I’m a Full-Stack Developer proficient in the
@@ -59,6 +59,7 @@
               opportunity / internship that suits my skills and interests</span
             >
           </p>
+          </div>
           <div class="btndiv flex">
             <button id="cmbtn">SAY Hi 🙋🏻‍♂️</button>
             <a class="resume" href="sanket.jpeg" target="_blank">
@@ -119,7 +120,7 @@
             <div style="padding-left: 32px">
               <span>skills: [</span>
               <span style="color: rgb(252, 211, 77)"
-                >'HTML', 'CSS', 'JavaScript', 'GSAP', 'SQL', 'GitHub', 'Java',
+                >'HTML', 'CSS', 'JavaScript', 'GSAP', 'MySQL', 'GitHub', 'Java',
                 'DSA'</span
               >
               <span>],</span>
@@ -176,15 +177,15 @@
       </div>
       <div class="grid-container">
         <button class="Btn">HTML</button>
-        <button class="Btn">CSS</button>
-        <button class="Btn">JAVASCRIPT</button>
-        <button class="Btn">NODE-JS</button>
-        <button class="Btn">REACTJS</button>
-        <button class="Btn">JAVA</button>
-        <button class="Btn">DSA</button>
-        <button class="Btn">MONGODB</button>
-        <button class="Btn">MySQL</button>
-        <button class="Btn">GITHUB</button>
+        <button id="b1" class="btn0 Btn">CSS</button>
+        <button id="b2" class="btn1 Btn">JAVASCRIPT</button>
+        <button id="b3" class="btn2 Btn">NODE-JS</button>
+        <button id="b4" class="btn3 Btn">REACTJS</button>
+        <button id="b5" class="btn4 Btn">JAVA</button>
+        <button id="b6" class="btn5 Btn">DSA</button>
+        <button id="b7" class="btn6 Btn">MONGODB</button>
+        <button id="b8" class="btn7 Btn">MySQL</button>
+        <button id="b9" class="btn9 Btn">GITHUB</button>
       </div>
     </div>
 
@@ -268,12 +269,14 @@
                 class="text-cyan-300 hover:underline"
                 href="https://subscription-frontend-beige.vercel.app/"
                 target="_blank"
-                >Live Link</a
+              >
+                🔗 Live Link</a
               >
             </div>
           </div>
         </div>
 
+        <!-- card -->
         <div
           class="bg-zinc-800 max-w-sm md:w-[25vw] rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 transition duration-300"
         >
@@ -309,12 +312,12 @@
             </h1>
 
             <div class="flex justify-between mt-4 text-sm">
-              <!-- <a
-        class="text-cyan-300 hover:underline"
-        href="https://your-trip-planner-link.vercel.app/"
-        target="_blank"
-        >Live Link</a
-      > -->
+              <a
+                class="text-cyan-300 hover:underline"
+                href="https://ai-trip-planner-pi-sand.vercel.app/"
+                target="_blank"
+                >🔗 Live Link</a
+              >
             </div>
           </div>
         </div>
@@ -398,11 +401,10 @@
       </div>
     </div>
 
-    <div class="main5 ">
+    <div class="main5">
       <div class="header-main5">
-        <h1 class="text-[3vw] font-[500] font-[gilroy]" style="color: #c6e8a2"
-        >
-         📖 EDUCATION 
+        <h1 class="text-[3vw] font-[500] font-[gilroy]" style="color: #c6e8a2">
+          📖 EDUCATION
         </h1>
       </div>
       <div class="rest-main5">
@@ -588,7 +590,7 @@
           </p>
         </div>
         <!-- Contact Icons -->
-        <div class="icondiv mt-12 flex  justify-center gap-8 text-4xl">
+        <div class="icondiv mt-12 flex justify-center gap-8 text-4xl">
           <!-- LinkedIn -->
           <div class="flex flex-col items-center justify-center">
             <a
