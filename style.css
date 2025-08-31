@@ -237,12 +237,12 @@ button:active{
  }
 
   .leftrest h1{
-    font-size: 4vw;
+    font-size: 5vw;
     font-family: cursive;
  }
  
  .leftrest p{
-    font-size: 2.7vw;
+    font-size: 2.9vw;
  }
 
  .btndiv{
@@ -373,7 +373,7 @@ button:active{
 .main3{ 
     border-top: 1px solid #c1abab;
    width: 100%;
-   margin-top: 10vh;
+   margin-top: 0vh;
    height: auto !important;
    /* background-color: crimson;  */
    color:#c6e8a2;
@@ -467,8 +467,8 @@ button:active{
    }
     .main3top h1
     {  padding-left: 15px;
-       font-size: 5vmax;
-       overflow: hidden;
+       font-size: 3vmax;
+      
     }
     .main3top h2
     {
@@ -484,7 +484,9 @@ button:active{
        margin-top: 60px;
        padding: 0px 12px;
    }
-
+.abhhh{
+    font-size: 3vmax;
+}
 }
 
 #html{
@@ -510,7 +512,7 @@ width: 50px;
 
 @media (max-width: 1024px) {
   .main4{
-    margin-top: 55%;
+    margin-top: 50%;
   }
 
 }
@@ -541,8 +543,8 @@ width: 50px;
     .project-card h1{
         font-size: 6.5vw;
     }
-
-}
+   
+}   
 
 .main5
 { 
