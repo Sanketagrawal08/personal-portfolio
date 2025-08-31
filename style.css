@@ -623,6 +623,7 @@ width: 50px;
     font-size: 1.2vmax;
     display: flex;
     align-items: center;
+    padding-top: 1vw;
 }
 
 

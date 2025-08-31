@@ -1,27 +1,4 @@
 
-var linkedin = document.querySelector("#linkedin");
-var github = document.querySelector("#github");
-var instagram = document.querySelector("#instagram")
-var mail = document.querySelector("#mail");
-
-
-linkedin.addEventListener("click",function(){
-    window.open("https://www.linkedin.com/in/sanket-agrawal-1a0094309/");
-});
-
-github.addEventListener("click",function(){
-    window.open("https://github.com/Sanketagrawal08");
-});
-
-instagram.addEventListener("click",function(){
-    window.open("https://www.instagram.com/sanket_agrawal08/");
-})
- 
-mail.addEventListener("click",function(){
-    window.open("mailto:sanketagrawal6969@gmail.com")
-});
-
-
 var animation = lottie.loadAnimation({
     container: document.getElementById('laptop-animation'), // the container div
     renderer: 'svg', // render as SVG
@@ -67,84 +44,40 @@ cmbtn.addEventListener("click",function(){
     main6.scrollIntoView({behavior : 'smooth'});
 })
 
+document.addEventListener("DOMContentLoaded", () => {
+  var feedback_form = document.getElementById("feedback-form");
+  var sbtn = document.getElementById("submitForm");
 
-var feedback_form = document.getElementById("feedback-form")
-var sbtn = document.getElementById("submitForm")
-console.log(sbtn.textContent);
+  // Initialize EmailJS
+  emailjs.init("zBq95BH7z1_2CrgID");
 
-emailjs.init("zBq95BH7z1_2CrgID");
+  feedback_form.addEventListener("submit", (e) => {
+    e.preventDefault(); // prevent default form submit
 
-feedback_form.addEventListener("submit", (e) => {
-    
-    e.preventDefault();
+    sbtn.textContent = "Submitting...";
+    sbtn.disabled = true;
 
-    sbtn.textContent = "Submitting..."
-    sbtn.disabled = true
-    emailjs.sendForm('service_j5rdm6p', 'template_idf6yl4', e.target, 'zBq95BH7z1_2CrgID')
+    emailjs.sendForm(
+      'service_j5rdm6p', 
+      'template_idf6yl4', 
+      feedback_form
+    )
     .then((result) => {
-        
-        sbtn.textContent = "Submitted Successfully ✅"
+      sbtn.textContent = "Submitted Successfully ✅";
 
-        setTimeout(() => {
-            sbtn.textContent = "Submit"
-            sbtn.disabled = false;
-        }, 1000);
+      // Clear form after submission
+      feedback_form.reset();
 
+      setTimeout(() => {
+        sbtn.textContent = "Send Message";
+        sbtn.disabled = false;
+      }, 2000);
     })
     .catch((error) => {
-        
-        alert('Failed to send feedback. Please try again.');
-        console.error(error);
-        sbtn.textContent = "Submit"
-        sbtn.disabled = false;
+      console.error(error);
+      alert("Failed to send feedback. Please try again.");
+      sbtn.textContent = "Send Message";
+      sbtn.disabled = false;
     });
+  });
 });
-
-
-
-
-
-// <div id="codediv1" style="background: linear-gradient(to right, rgb(39, 39, 45), rgb(73, 73, 74));" class="w-[45vw] flex justify-between rounded-t-lg">
-//                 <div class="flex items-center text-white pl-6 font-semibold">
-//                     <h1 style="color: rgb(8, 169, 118); word-spacing: 2px;">🧑‍💻 Sanket Code's Lab</h1>
-//                 </div>
-//                 <div id="codeAbove" class="text-white p-4 flex gap-2">
-//                     <div  class="circle ml-2 bg-red-500 w-[1vw] h-[1vw] rounded-full"></div>
-//                     <div class="circle bg-yellow-500 w-[1vw] h-[1vw] rounded-full"></div>
-//                     <div class="circle bg-green-500 w-[1vw] h-[1vw] rounded-full"></div>
-//                 </div>
-//             </div>
-          
-//              <div id="codediv" style="border-top: 1px solid rgb(79, 79, 79);">
-//                  <div class="pl-16">
-//                     <span style="color: cornflowerblue;">const</span>
-//                     <span style="color: rgb(236, 72, 153);">coder = {</span>
-//                  </div>
-//                  <div  class="pl-20">
-//                     <span>name: </span>
-//                     <span style="color: rgb(252, 211, 77);">'Sanket Agrawal',</span>
-//                  </div>
-//                  <div  class="pl-20">
-//                     <span>skills: [</span> <span style="color: rgb(252, 211, 77);">'HTML' , 'CSS' , 'JAVASCRIPT' , ' C ' ,'GSAP' , 'SQL' , 'GITHUB' , 'JAVA'</span> ]
-//                  </div>
-//                  <div class="pl-24"><span>Learning : [<span style="color: rgb(126, 153, 240);">  'DSA' </span></span>]</div>
-//                  <div class="pl-24">
-//                     <span>hardWorker:</span> <span style="color: rgb(251, 146, 55);">true,</span>
-//                  </div>
-//                  <div class="pl-24">
-//                     <span>quicklearner: </span> <span style="color: rgb(251, 146, 55);">true,</span>
-//                  </div>
-//                  <div class="pl-24">
-//                     <span>problemSolver: </span> <span style="color: rgb(251, 146, 55);">true,</span>
-//                  </div>
-//                  <div class="pl-24">
-//                     <span>hireable: </span>  <span style="color: rgb(251, 146, 55);">function() {</span>
-//                  </div>
-//                  <div class="pl-32"><span style="color: rgb(251, 146, 55);">return(</span></div>
-//                  <div class="pl-32"><span  style="color: rgb(68, 108, 228);">this.hardWorker</span> <span>&&</span></div>
-//                  <div class="pl-32"><span style="color: rgb(68,108,228)">this.problemSolver</span> <span>&&</span></div>
-//                  <div class="pl-32"><span style="color: rgb(68,108,228)">this.skills.length </span> <span> >= 5</span></div>
-//                  <div class="pl-32"><span style="color: rgb(251, 146, 55);">);</span></div>
-//                  <div class="pl-24"><span style="color: rgb(252, 211, 77);">};</span></div>
-//                  <div class="pl-16"><span style="color: rgb(236, 72, 153);">};</span></div>                
-//              </div>
