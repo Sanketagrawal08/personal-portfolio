@@ -194,6 +194,7 @@ button:active{
         white-space: nowrap;
         align-items: center;
         gap: 15vw;
+        margin-top: 5vh;
     }
     #codediv{
         width: 90%;
@@ -237,16 +238,16 @@ button:active{
  }
 
   .leftrest h1{
-    font-size: 5vw;
+    font-size: 6vw;
     font-family: cursive;
  }
  
  .leftrest p{
-    font-size: 2.9vw;
+    font-size: 3.1vw;
  }
 
  .btndiv{
-    margin-top: 6%;
+    margin-top: 7%;
  }
 
 }
@@ -485,7 +486,7 @@ button:active{
        padding: 0px 12px;
    }
 .abhhh{
-    font-size: 3vmax;
+    font-size: 3vmax !important;
 }
 }
 
@@ -548,7 +549,7 @@ width: 50px;
 
 .main5
 { 
-  margin-top: 15%;
+  margin-top: 1%;
   width: 100%;
   height: 100%;
   /* background-color: rgba(32,1,140); */
@@ -745,10 +746,7 @@ width: 50px;
 }
 
 @media (max-width:615px){
-    .main5 .header-main5{
-        /* margin-top: 25%; */
-      /* background-color: rebeccapurple; */
-    }
+    
     .main5 .header-main5 h1{
         font-size: 4.3vmax;
     }
@@ -761,14 +759,16 @@ width: 50px;
 @media (max-width:800px) {
    
    .main5 .header-main5{
-     margin-top: -100% !important;
+     margin-top: -120% !important;
    }
 }
 @media (max-width:615px) {
     .main5{
-        /* background-color: red; */
-     margin-top: 80vh;
+        text-decoration: underline;
+        background-color: #000000;
+     margin-top: 70vh;
     }
+
 }
 
 
@@ -829,7 +829,7 @@ width: 50px;
 
 @media (max-width:615px) {
     .main6{
-        margin-top: 35vmax;
+        margin-top: 30vmax;
     }
     #feedback-form{
         width: 80vw;
