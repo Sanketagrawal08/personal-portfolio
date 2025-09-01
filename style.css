@@ -237,12 +237,11 @@ button:active {
   }
 
   .leftrest h1 {
-    font-size: 6.5vw;
-    font-family: cursive;
+    font-size: 6.7vw;
   }
 
   .leftrest p {
-    font-size: 3.3vw;
+    font-size: 3.5vw;
   }
 
   .btndiv {
@@ -884,20 +883,16 @@ button:active {
   bottom: 7px;
   border-radius: 50%;
 }
-
-.Btn:hover {
-  animation: jello-horizontal 0.9s both;
-}
 .btn1 {
   position: relative;
   width: 150px;
   height: 55px;
   border-radius: 45px;
   border: none;
-  background-color: rgb(185, 103, 31);
+  background-color: rgb(94, 46, 4);
   color: rgb(255, 255, 255);
-  box-shadow: 0px 10px 10px rgb(239, 162, 108) inset,
-    0px 5px 10px rgba(5, 5, 5, 0.212), 0px -10px 10px rgb(224, 171, 47) inset;
+  box-shadow: 0px 10px 10px rgb(88, 38, 3) inset,
+    0px 5px 10px rgba(5, 5, 5, 0.212), 0px -10px 10px rgb(88, 38, 3) inset;
   cursor: pointer;
   display: flex;
   align-items: center;
