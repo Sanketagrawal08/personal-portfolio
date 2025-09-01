@@ -19,14 +19,18 @@ var pjs = document.getElementById("pjs")
 var educ = document.getElementById("educ")
 var ctt = document.getElementById("ctt")
 var cmbtn = document.getElementById("cmbtn");
+var abhhsh = document.getElementsByClassName("scro")[0];
 
-
+document.getElementById("cmbtn").addEventListener("click", function() {
+    
+    window.open("https://www.instagram.com/sanket_agrawal08/", "_blank");
+  });
 
 skl.addEventListener("click",function(){
     main3.scrollIntoView({behavior : 'smooth'});
 })
 pjs.addEventListener("click",function(){
-    project_heading.scrollIntoView({behavior : 'smooth'});
+    abhhsh.scrollIntoView({behavior : 'smooth'});
 })
 educ.addEventListener("click",function(){
     main5.scrollIntoView({behavior : 'smooth'});
